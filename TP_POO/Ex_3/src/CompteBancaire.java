@@ -6,7 +6,6 @@ class CompteBancaire {
         this.numeroCompte = numeroCompte;
         this.solde = soldeInitial;
     }
-
     public void deposer(double montant) {
         if (montant > 0) {
             solde += montant;
@@ -14,7 +13,6 @@ class CompteBancaire {
                     + ". Nouveau solde : " + solde + " €");
         }
     }
-
     public void retirer(double montant) {
         if (montant > 0 && montant <= solde) {
             solde -= montant;
@@ -25,7 +23,6 @@ class CompteBancaire {
                     + ". Solde actuel : " + solde + " €");
         }
     }
-
     public double getSolde() { return solde; }
     public String getNumeroCompte() { return numeroCompte; }
 }
